@@ -6,6 +6,7 @@ import time
 from typing import Collection
 from wrapt import wrap_function_wrapper
 
+from ibm_watsonx_ai.foundation_models.utils.enums import DecodingMethods
 from opentelemetry import context as context_api
 from opentelemetry.trace import get_tracer, SpanKind
 from opentelemetry.trace.status import Status, StatusCode
@@ -135,8 +136,11 @@ def _set_input_attributes(span, instance, kwargs):
     # Set other attributes
     modelParameters = instance.params
     if modelParameters is not None:
+        decoding_method = modelParameters.get("decoding_method", None)
+        if isinstance(decoding_method, DecodingMethods):
+            decoding_method = decoding_method.value
         _set_span_attribute(
-            span, SpanAttributes.LLM_DECODING_METHOD, modelParameters.get("decoding_method", None)
+            span, SpanAttributes.LLM_DECODING_METHOD, decoding_method
         )
         _set_span_attribute(
             span, SpanAttributes.LLM_RANDOM_SEED, modelParameters.get("random_seed", None)
