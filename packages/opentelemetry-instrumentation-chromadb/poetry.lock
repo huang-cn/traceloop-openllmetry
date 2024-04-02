@@ -1195,13 +1195,13 @@ files = [
 
 [[package]]
 name = "opentelemetry-semantic-conventions-ai"
-version = "0.0.23"
+version = "0.1.1"
 description = "OpenTelemetry Semantic Conventions Extension for Large Language Models"
 optional = false
-python-versions = ">=3.8.1,<4"
+python-versions = "<4,>=3.9"
 files = [
-    {file = "opentelemetry_semantic_conventions_ai-0.0.23-py3-none-any.whl", hash = "sha256:b5d7b5880c59385160436d8dfc6786c008346a131393cf821f5494b070248450"},
-    {file = "opentelemetry_semantic_conventions_ai-0.0.23.tar.gz", hash = "sha256:6e79d918f27881b2998bdd38a51670fca1af3f1d356f21fba276d03a1100381b"},
+    {file = "opentelemetry_semantic_conventions_ai-0.1.1-py3-none-any.whl", hash = "sha256:3ba3a4006231a88ad3c42c49ad4d4343783f1c3ccc92d45368f648aac02b3cc6"},
+    {file = "opentelemetry_semantic_conventions_ai-0.1.1.tar.gz", hash = "sha256:4ffa9725634889c7a6a917d13ff3589b3004a17526cd66b75875aedc50aae336"},
 ]
 
 [[package]]
@@ -1595,13 +1595,13 @@ files = [
 
 [[package]]
 name = "pytest"
-version = "8.1.0"
+version = "8.1.1"
 description = "pytest: simple powerful testing with Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pytest-8.1.0-py3-none-any.whl", hash = "sha256:ee32db7af8de4629a455806befa90559f307424c07b8413ccfc30bf5b221dd7e"},
-    {file = "pytest-8.1.0.tar.gz", hash = "sha256:f8fa04ab8f98d185113ae60ea6d79c22f8143b14bc1caeced44a0ab844928323"},
+    {file = "pytest-8.1.1-py3-none-any.whl", hash = "sha256:2a8386cfc11fa9d2c50ee7b2a57e7d898ef90470a7a34c4b949ff59662bb78b7"},
+    {file = "pytest-8.1.1.tar.gz", hash = "sha256:ac978141a75948948817d360297b7aae0fcb9d6ff6bc9ec6d514b85d5a65c044"},
 ]
 
 [package.dependencies]
@@ -2434,4 +2434,4 @@ instruments = []
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4"
-content-hash = "acea3727c7f40891986055de17d4cdd66363ff5b837b78bd24aa7d64245aad41"
+content-hash = "8883786a47c4853806bad3ae36981fd140f2a06bb7af1cd79a75d431183b704e"

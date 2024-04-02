@@ -1,3 +1,48 @@
+## v0.15.4 (2024-03-31)
+
+### Fix
+
+- **traceloop-sdk**: default value for metrics endpoint (#711)
+
+## v0.15.3 (2024-03-28)
+
+### Fix
+
+- instrumentation deps without the SDK (#707)
+- **langchain**: support custom models (#706)
+
+## v0.15.2 (2024-03-27)
+
+### Fix
+
+- **openai**: enrich assistant data if not available (#705)
+
+## v0.15.1 (2024-03-27)
+
+### Fix
+
+- **openai**: support pre-created assistants (#701)
+
+## v0.15.0 (2024-03-26)
+
+### Feat
+
+- **openai**: assistants API (#673)
+- **pinecone**: instrument pinecone query embeddings (#368)
+
+### Fix
+
+- **traceloop-sdk**: custom span processor's on_start is honored (#695)
+- **openai**: do not import tiktoken if not used
+- **sdk**: exclude api.traceloop.com from requests
+- **openai**: Support report token usage in stream mode (#661)
+
+## v0.14.5 (2024-03-21)
+
+### Fix
+
+- **anthropic**: support messages API (#671)
+
 ## v0.14.4 (2024-03-21)
 
 ### Fix

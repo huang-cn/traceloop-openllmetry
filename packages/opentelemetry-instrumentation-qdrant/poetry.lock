@@ -502,13 +502,13 @@ files = [
 
 [[package]]
 name = "opentelemetry-semantic-conventions-ai"
-version = "0.0.23"
+version = "0.1.1"
 description = "OpenTelemetry Semantic Conventions Extension for Large Language Models"
 optional = false
-python-versions = ">=3.8.1,<4"
+python-versions = "<4,>=3.9"
 files = [
-    {file = "opentelemetry_semantic_conventions_ai-0.0.23-py3-none-any.whl", hash = "sha256:b5d7b5880c59385160436d8dfc6786c008346a131393cf821f5494b070248450"},
-    {file = "opentelemetry_semantic_conventions_ai-0.0.23.tar.gz", hash = "sha256:6e79d918f27881b2998bdd38a51670fca1af3f1d356f21fba276d03a1100381b"},
+    {file = "opentelemetry_semantic_conventions_ai-0.1.1-py3-none-any.whl", hash = "sha256:3ba3a4006231a88ad3c42c49ad4d4343783f1c3ccc92d45368f648aac02b3cc6"},
+    {file = "opentelemetry_semantic_conventions_ai-0.1.1.tar.gz", hash = "sha256:4ffa9725634889c7a6a917d13ff3589b3004a17526cd66b75875aedc50aae336"},
 ]
 
 [[package]]
@@ -774,19 +774,19 @@ files = [
 
 [[package]]
 name = "qdrant-client"
-version = "1.7.3"
+version = "1.8.2"
 description = "Client library for the Qdrant vector search engine"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "qdrant_client-1.7.3-py3-none-any.whl", hash = "sha256:b062420ba55eb847652c7d2a26404fb1986bea13aa785763024013f96a7a915c"},
-    {file = "qdrant_client-1.7.3.tar.gz", hash = "sha256:7b809be892cdc5137ae80ea3335da40c06499ad0b0072b5abc6bad79da1d29fc"},
+    {file = "qdrant_client-1.8.2-py3-none-any.whl", hash = "sha256:ee5341c0486d09e4346b0f5ef7781436e6d8cdbf1d5ecddfde7adb3647d353a8"},
+    {file = "qdrant_client-1.8.2.tar.gz", hash = "sha256:65078d5328bc0393f42a46a31cd319a989b8285bf3958360acf1dffffdf4cc4e"},
 ]
 
 [package.dependencies]
 grpcio = ">=1.41.0"
 grpcio-tools = ">=1.41.0"
-httpx = {version = ">=0.14.0", extras = ["http2"]}
+httpx = {version = ">=0.20.0", extras = ["http2"]}
 numpy = [
     {version = ">=1.21", markers = "python_version >= \"3.8\" and python_version < \"3.12\""},
     {version = ">=1.26", markers = "python_version >= \"3.12\""},
@@ -796,7 +796,7 @@ pydantic = ">=1.10.8"
 urllib3 = ">=1.26.14,<3"
 
 [package.extras]
-fastembed = ["fastembed (==0.1.1)"]
+fastembed = ["fastembed (==0.2.5)"]
 
 [[package]]
 name = "setuptools"
@@ -978,4 +978,4 @@ instruments = []
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<4"
-content-hash = "a9e5b4d6daed19c71c53276d5508c52fa2a2bd662ca17677bcd69147f89c21c4"
+content-hash = "9f47b5097e935eb470dcf1ceaeb8209f3a4ab2f44522b76a8ca2222d6a676f9a"
